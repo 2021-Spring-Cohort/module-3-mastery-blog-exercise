@@ -45,6 +45,6 @@ public class TopicControllerTest {
     public void displaySingleTopicIsMappedForTheSingleTopicEndpoint() throws Exception {
         MockMvc mockMvc = MockMvcBuilders.standaloneSetup(underTest).build();
         mockMvc.perform(get("/topics/1"))
-                .andExpect(status().isOk());
+               .andExpect(status().isOk());
     }
 }

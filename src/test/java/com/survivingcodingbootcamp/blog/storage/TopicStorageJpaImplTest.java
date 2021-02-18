@@ -42,7 +42,7 @@ class TopicStorageJpaImplTest {
     }
 
     @Test
-    public void retrieveSingleTopicShouldRetrieveSingleTopicByIdFromRepo(){
+    public void retrieveSingleTopicShouldRetrieveSingleTopicByIdFromRepo() {
         when(topicRepo.findById(1L)).thenReturn(Optional.of(testTopic));
         assertThat(underTest.retrieveSingleTopic(1)).isEqualTo(testTopic);
     }

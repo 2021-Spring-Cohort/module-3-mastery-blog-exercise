@@ -20,8 +20,8 @@ public class SpringWebApplicationTest {
     @Test
     public void shouldReceiveOkAndHtmlFromHomeEndPoint() throws Exception {
         mockMvc.perform(get("/"))
-                .andDo(print())
-                .andExpect(status().isOk())
-                .andExpect(MockMvcResultMatchers.content().contentType("text/html;charset=UTF-8"));
+               .andDo(print())
+               .andExpect(status().isOk())
+               .andExpect(MockMvcResultMatchers.content().contentType("text/html;charset=UTF-8"));
     }
 }

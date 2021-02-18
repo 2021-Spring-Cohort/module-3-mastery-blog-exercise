@@ -17,6 +17,7 @@ public class TopicController {
 
         this.topicStorage = topicStorage;
     }
+
     @GetMapping("/{id}")
     public String displaySingleTopic(@PathVariable long id, Model model) {
         model.addAttribute("topic", topicStorage.retrieveSingleTopic(id));

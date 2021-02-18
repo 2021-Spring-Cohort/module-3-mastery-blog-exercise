@@ -28,32 +28,34 @@ public class WebMvcLayerTest {
     @Test
     public void shouldReceiveOKAndViewOfHomeTemplateFromHomeEndpoint() throws Exception {
         mockMvc.perform(get("/"))
-                .andDo(print())
-                .andExpect(status().isOk())
-                .andExpect(model().attributeExists("topics"))
-                .andExpect(view().name("home-template"));
+               .andDo(print())
+               .andExpect(status().isOk())
+               .andExpect(model().attributeExists("topics"))
+               .andExpect(view().name("home-template"));
     }
+
     @Test
     public void shouldReceiveOKAndViewOfTopicTemplateFromSingleTopicEndpoint() throws Exception {
         Topic testTopic = new Topic("Test Topic");
         when(topicStorage.retrieveSingleTopic(1L)).thenReturn(testTopic);
         mockMvc.perform(get("/topics/1"))
-                .andDo(print())
-                .andExpect(status().isOk())
-                .andExpect(model().attributeExists("topic"))
-                .andExpect(model().attribute("topic", testTopic))
-                .andExpect(view().name("single-topic-template"));
+               .andDo(print())
+               .andExpect(status().isOk())
+               .andExpect(model().attributeExists("topic"))
+               .andExpect(model().attribute("topic", testTopic))
+               .andExpect(view().name("single-topic-template"));
     }
+
     @Test
     public void shouldReceiveOkAndViewOfPostTemplateFromSinglePostEndpoint() throws Exception {
         Topic testTopic = new Topic("Test Topic");
         Post testPost = new Post("Test Post", testTopic, "Sample content.");
         when(postStorage.retrievePostById(1L)).thenReturn(testPost);
         mockMvc.perform(get("/posts/1"))
-                .andDo(print())
-                .andExpect(status().isOk())
-                .andExpect(model().attributeExists("post"))
-                .andExpect(model().attribute("post", testPost))
-                .andExpect(view().name("single-post-template"));
+               .andDo(print())
+               .andExpect(status().isOk())
+               .andExpect(model().attributeExists("post"))
+               .andExpect(model().attribute("post", testPost))
+               .andExpect(view().name("single-post-template"));
     }
 }

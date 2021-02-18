@@ -48,6 +48,6 @@ public class HomeControllerTest {
     public void displayHomePageInteractsIsMappedForTheHomeEndpoint() throws Exception {
         MockMvc mockMvc = MockMvcBuilders.standaloneSetup(underTest).build();
         mockMvc.perform(get("/"))
-                .andExpect(status().isOk());
+               .andExpect(status().isOk());
     }
 }

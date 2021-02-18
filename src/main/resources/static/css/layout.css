@@ -1,26 +1,31 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
-.header{
+
+.header {
     padding: 10px;
 }
-.topics{
+
+.topics {
     padding: 10px;
 }
-.topics__nav{
-    display:flex;
+
+.topics__nav {
+    display: flex;
     flex-direction: column;
 }
-.welcome{
+
+.welcome {
     padding: 10px;
 }
-@media screen and (min-width:1000px){
-    .container{
+
+@media screen and (min-width: 1000px) {
+    .container {
         width: 85%;
         max-width: 1400px;
-        min-width:1000px;
+        min-width: 1000px;
         margin: 15px auto;
     }
 

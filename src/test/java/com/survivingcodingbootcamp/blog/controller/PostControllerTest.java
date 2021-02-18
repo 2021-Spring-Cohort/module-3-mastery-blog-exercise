@@ -30,20 +30,21 @@ public class PostControllerTest {
     }
 
     @Test
-    public void displaySinglePostShouldReturnPostTemplateName(){
+    public void displaySinglePostShouldReturnPostTemplateName() {
         String templateName = underTest.displaySinglePost(1L, model);
         assertThat(templateName).isEqualTo("single-post-template");
     }
 
     @Test
-    public void displaySinglePostShouldAddPostToModel(){
+    public void displaySinglePostShouldAddPostToModel() {
         underTest.displaySinglePost(1L, model);
         verify(model).addAttribute("post", testPost);
     }
+
     @Test
     public void displaySinglePostIsMappedForTheSinglePostEndpoint() throws Exception {
         MockMvc mockMvc = MockMvcBuilders.standaloneSetup(underTest).build();
         mockMvc.perform(get("/posts/1"))
-                .andExpect(status().isOk());
+               .andExpect(status().isOk());
     }
 }

@@ -14,9 +14,9 @@ import static org.assertj.core.api.Assertions.assertThat;
 @DataJpaTest
 public class JpaWiringTest {
     @Autowired
-    private TopicRepository topicRepo;
-    @Autowired
     PostRepository postRepo;
+    @Autowired
+    private TopicRepository topicRepo;
     @Autowired
     private TestEntityManager entityManager;
 

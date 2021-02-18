@@ -25,21 +25,21 @@ public class PostStorageJpaImplTest {
     }
 
     @Test
-    public void retrieveAllPostsShouldFindAllPostsFromRepo(){
+    public void retrieveAllPostsShouldFindAllPostsFromRepo() {
         Iterable<Post> posts = Collections.singletonList(testPost);
         when(postRepo.findAll()).thenReturn(posts);
         assertThat(underTest.retrieveAllPosts()).contains(testPost);
     }
 
     @Test
-    public void retrievePostByIdShouldFindPostFromRepo(){
+    public void retrievePostByIdShouldFindPostFromRepo() {
         when(postRepo.findById(1L)).thenReturn(Optional.of(testPost));
         Post retrievedPost = underTest.retrievePostById(1L);
         assertThat(retrievedPost).isEqualTo(testPost);
     }
 
     @Test
-    public void saveShouldSavePostToRepo(){
+    public void saveShouldSavePostToRepo() {
         underTest.save(testPost);
         verify(postRepo).save(testPost);
     }

@@ -1,44 +1,51 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Montserrat&display=swap');
 
-:root{
+:root {
     --dark-background: #2F3E46;
     --text: #cad2c5;
     --light-highlight: #84A98C;
     --dark-highlight: #52796f;
-    --light-background:#354f52;
+    --light-background: #354f52;
 }
 
-h1{
+h1 {
     font-family: 'Inconsolata', monospace;
     font-size: 40px;
 }
-h2{
-    color:var(--light-highlight)
+
+h2 {
+    color: var(--light-highlight)
 }
-.container{
+
+.container {
     background-color: var(--light-background);
 }
-html{
+
+html {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     background-color: var(--dark-background);
     color: var(--text);
 }
-.header{
+
+.header {
     background-color: var(--light-background);
     color: var(--light-highlight);
 }
-.header__nav-link{
+
+.header__nav-link {
     font-size: 18px;
     color: var(--dark-highlight);
 }
-.header__nav-link:hover{
+
+.header__nav-link:hover {
     color: var(--light-highlight);
 }
 
-a{
-    color: var(--dark-highlight); 
+a {
+    color: var(--dark-highlight);
 }
-a:hover{
+
+a:hover {
     color: var(--light-highlight);
 }
