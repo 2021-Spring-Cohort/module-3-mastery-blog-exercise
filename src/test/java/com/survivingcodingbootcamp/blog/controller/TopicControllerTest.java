@@ -27,7 +27,6 @@ public class TopicControllerTest {
         model = mock(Model.class);
         testTopic = new Topic("Test Topic");
         when(topicStorage.retrieveSingleTopic(1L)).thenReturn(testTopic);
-
     }
 
     @Test

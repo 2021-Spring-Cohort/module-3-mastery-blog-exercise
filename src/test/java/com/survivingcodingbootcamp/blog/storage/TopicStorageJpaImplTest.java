@@ -28,7 +28,7 @@ class TopicStorageJpaImplTest {
 
     @Test
     public void retrieveAllTopicsShouldFindAllTopicsFromRepo() {
-        List retrievedTopics = Collections.EMPTY_LIST;
+        List<Topic> retrievedTopics = Collections.EMPTY_LIST;
         when(topicRepo.findAll()).thenReturn(retrievedTopics);
 
         assertThat(underTest.retrieveAllTopics()).isEmpty();
@@ -40,6 +40,7 @@ class TopicStorageJpaImplTest {
         underTest.save(testTopic);
         verify(topicRepo).save(testTopic);
     }
+
     @Test
     public void retrieveSingleTopicShouldRetrieveSingleTopicByIdFromRepo(){
         when(topicRepo.findById(1L)).thenReturn(Optional.of(testTopic));

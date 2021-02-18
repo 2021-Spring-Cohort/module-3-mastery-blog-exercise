@@ -35,9 +35,10 @@ The deadline for this project is Monday, March 8th at 9:30am.
 If the project is not complete or not pushed up to GitHub at that time it will be evaluated as an _Incomplete_ project.
 
 This is a Pass/Fail assignment, the assignment will be considered passing if it meets the following criteria:
-- Uses Git and GitHub to push complete assignment to GitHub before due date.
-- The code compiles.  (No red squiggly underlines!)
-- The provided integration tests still pass.
+
+- Uses Git and GitHub to push complete assignment to GitHub before due date. (Not making any pushes will result in an incomplete grade.)
+- The code compiles.  (No red squiggly underlines!) (Code that doesn't compile will result in a Fail)
+- The provided integration tests still pass. 
 - All existing request endpoints are still reachable through the browser.
 - All three of the required tasks are complete.
 
@@ -51,7 +52,7 @@ for this assessment.
 
 ## Optional Tasks:
 Try these only when the above are finished and only commit them to the repo if they work and don't break the 
-application.  All the above grading criteria still need to be met while you add these _**OPTIONAL**_ features. 
+application.  All the above grading criteria still need to be met while you add these _**OPTIONAL**_ features.  There is no extra credit offered by doing these tasks.
 1.  Create a new form for new topics on the home page.
 2.  Add a form to the `single-post-template` that allows you to add comments to a post.  
 3.  Add a date/time field to the `Post` POJO and post template so that you can see when a post is created.
