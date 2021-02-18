@@ -12,21 +12,21 @@ We need you to help us add some new features and functionality to this website.
 parameters. You will also need to add a method to the `PostController` to allow for the creation of new posts.
 3. Add a hashtag system to our posts.  The hashtag should be connected to the posts in a way that a post can have
    different hashtags and a hashtag can be associated with different posts.
-- Create a `Hashtag` POJO and provide the correct JPA entity mapping for it and the `POSTS`
-- Create a `single-hashtag-template.html` file that matches the uses the same style.css file as the other templates
-  and has a similar style to the other pages.  This page should display the posts associated with it's specfic hashtag
-  and provide links to those posts.
-- Create a `all-hashtags-template.html` file that that matches the uses the same style.css file as the other templates
-  and has a similar style to the other pages.  This page should display all hashtags in the application and provide
-  links to those individual hashtags.
-- Add an HTML form to the `single-post-template.html` that allows you to add a hashtag to the post you are viewing.
-- Create a `HashtagStorage` service class to interact with your JPA repository for hashtags.  It should be able to
-  retrieve a hashtag by the value of its id field and by the value of its name/title field, retrieve all hashtags, and
-  save new and existing hashtags.
-- Create a `HashTagController` to provide three path mappings, one for individual hashtags, one for all hashtags, and
-  one for adding a hashtag to the system.
-    - Add a link to the all hashtags endpoint to the header's nav list on all pages.
-      passing information to the controller about each of the fields you need to fill the `Post` POJO's constructor
+  - Create a `Hashtag` POJO and provide the correct JPA entity mapping for it and the `POSTS`
+  - Create a `single-hashtag-template.html` file that matches the uses the same style.css file as the other templates
+    and has a similar style to the other pages.  This page should display the posts associated with it's specfic hashtag
+    and provide links to those posts.
+  - Create a `all-hashtags-template.html` file that that matches the uses the same style.css file as the other templates
+    and has a similar style to the other pages.  This page should display all hashtags in the application and provide
+    links to those individual hashtags.
+  - Add an HTML form to the `single-post-template.html` that allows you to add a hashtag to the post you are viewing.
+  - Create a `HashtagStorage` service class to interact with your JPA repository for hashtags.  It should be able to
+    retrieve a hashtag by the value of its id field and by the value of its name/title field, retrieve all hashtags, and
+    save new and existing hashtags.
+  - Create a `HashTagController` to provide three path mappings, one for individual hashtags, one for all hashtags, and
+    one for adding a hashtag to the system.
+      - Add a link to the all hashtags endpoint to the header's nav list on all pages.
+        passing information to the controller about each of the fields you need to fill the `Post` POJO's constructor
 
 ## Deadline and Grading Criteria
 
