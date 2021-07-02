@@ -5,7 +5,7 @@ We need you to help us add some new features and functionality to this website.
 
 
 ## The Required Tasks:
-1. Add a hashtag system to our posts. The hashtag should be connected to the posts in a way that a post can have different hashtags and a hashtag can be associated with different posts.
+1. Add a hashtag system to our posts. The hashtag should be connected to the posts in a way that a post can have different hashtags and a hashtag can be associated with different posts. (See #2)
 2. Create a Hashtag POJO and provide the correct JPA entity mapping for it and the POSTS
 3. Create a single-hashtag-template.html file that uses the same style.css file as the other templates and has a similar style to the other pages. This page should display the posts associated with it's specfic hashtag and provide links to those posts.
 4. Create a all-hashtags-template.html file that uses the same style.css file as the other templates and has a similar style to the other pages. This page should display all hashtags in the application and provide links to those individual hashtags.
