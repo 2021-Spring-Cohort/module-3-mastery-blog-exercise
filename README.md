@@ -17,7 +17,7 @@ We need you to help us add some new features and functionality to this website.
 10. Add a form to the single-category-template to create a new post for that category. You should include inputs for passing information to the controller about each of the fields you need to fill the Post POJO's constructor parameters. You will also need to add a method to the PostController to allow for the creation of new posts.
 ## Deadline and Grading Criteria
 
-The deadline for this project is Monday, March 8th at 9:30am.
+The deadline for this project is  Friday, July 16th, at 11:59pm.
 
 If the project is not complete or not pushed up to GitHub at that time it will be evaluated as an _Incomplete_ project.
 
